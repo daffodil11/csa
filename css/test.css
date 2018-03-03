@@ -1,5 +1,47 @@
+nav ul, footer {
+  margin: 0px;
+  padding: 0px; }
+
 body {
   font: 100% Helvetica, sans-serif;
   color: #333; }
 
-/*# sourceMappingURL=test.css.map */
+nav ul {
+  list-style: none; }
+
+nav li {
+  display: inline-block; }
+
+nav a {
+  display: block;
+  padding: 6px 12px;
+  color: primary-color;
+  text-decoration: none; }
+  nav a:visited {
+    color: primary-color; }
+  nav a:hover {
+    color: blue;
+    text-decoration: underline; }
+  nav a:active {
+    color: green; }
+
+footer {
+  list-style: none; }
+  footer p {
+    display: inline-block; }
+  footer ul {
+    display: inline-block; }
+  footer li {
+    display: inline-block; }
+  footer a {
+    display: block;
+    padding: 6px 12px;
+    color: primary-color;
+    text-decoration: none; }
+    footer a:visited {
+      color: primary-color; }
+    footer a:hover {
+      color: blue;
+      text-decoration: underline; }
+    footer a:active {
+      color: green; }

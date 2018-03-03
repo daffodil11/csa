@@ -1,7 +1,66 @@
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
+$blue: #33E;
+@mixin linx ($link, $visit, $hover, $active) {
+    color: $link;
+    text-decoration: none;
+    &:visited {
+        color:$visit;
+    }
+    &:hover {
+        color: $hover;
+        text-decoration: underline;
+    }
+    &:active {
+        color: $active;
+    }
+}
+
+%friendly {
+    margin: 0px;
+    padding: 0px;
+}
 
 body {
-  font: 50% $font-stack;
+  font: 100% $font-stack;
   color: $primary-color;
 }
+
+nav {
+    ul {
+        @extend %friendly;
+        list-style: none;
+    }
+    
+    li {display: inline-block;}
+    
+    a {
+        display: block;
+        padding: 6px 12px;
+        @include linx(primary-color,
+            primary-color,
+            blue,
+            green)
+    }
+}
+
+footer {
+    @extend %friendly;
+    list-style: none;
+    
+    p {display: inline-block;}
+    
+    ul {display: inline-block;}
+    
+    li {display: inline-block;}
+
+    a {
+        display: block;
+        padding: 6px 12px;
+        @include linx(primary-color,
+            primary-color,
+            blue,
+            green)
+    }
+}
+
