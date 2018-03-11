@@ -1,0 +1,17 @@
+header {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+section.jumbotron {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("/res/img/icon_banner.png");
+  background-size: cover;
+  height: 300px;
+  border-radius: 0px;
+  margin-bottom: 40px; }
+
+nav div.row h4 {
+  text-align: right;
+  display: inline-block; }

@@ -1,0 +1,20 @@
+$margin: 10px;
+
+header {
+    margin-top: $margin;
+    margin-bottom: $margin;
+}
+
+section.jumbotron {
+  display: flex;
+  background-image: url('/res/img/icon_banner.png');
+  background-size: cover;
+  height: 300px;
+  border-radius: 0px;
+  margin-bottom: 40px;
+}
+
+nav div.row h4 {
+    text-align:right;
+    display:inline-block;
+}
