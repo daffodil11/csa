@@ -5,6 +5,10 @@ header {
     margin-bottom: $margin;
 }
 
+section.container {
+    margin-bottom: 20px;
+}
+
 section.jumbotron {
   display: flex;
   background-image: url('../res/img/icon_banner.png');
@@ -17,4 +21,8 @@ section.jumbotron {
 nav div.row h4 {
     text-align:right;
     display:inline-block;
+}
+
+div.card {
+    height: 100%;
 }
