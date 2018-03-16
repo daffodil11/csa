@@ -9,7 +9,7 @@ section.container {
     margin-bottom: 20px;
 }
 
-section.jumbotron {
+main.jumbotron {
   display: flex;
   background-image: url('../res/img/icon_banner.png');
   background-size: cover;
@@ -25,4 +25,11 @@ nav div.row h4 {
 
 div.card {
     height: 100%;
+}
+
+div.row div {
+    
+    h2 {
+        padding-top:35px;
+    }
 }

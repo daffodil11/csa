@@ -5,7 +5,7 @@ header {
 section.container {
   margin-bottom: 20px; }
 
-section.jumbotron {
+main.jumbotron {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,3 +21,6 @@ nav div.row h4 {
 
 div.card {
   height: 100%; }
+
+div.row div h2 {
+  padding-top: 35px; }
