@@ -1,20 +1,22 @@
 $margin: 10px;
-
+$purple: #9d00fa;
+$orange: #e77d07;
 header {
     margin-top: $margin;
     margin-bottom: $margin;
 }
 
 section.container {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 main.jumbotron {
   display: flex;
   background-image: url('../res/img/icon_banner.png');
   background-size: cover;
-  height: 300px;
+  height: 360px;
   border-radius: 0px;
+  margin-top: 40px;
   margin-bottom: 40px;
 }
 
@@ -31,5 +33,60 @@ div.row div {
     
     h2 {
         padding-top:35px;
+    }
+}
+
+section div.answer {
+    margin-left: 30px;
+    img {
+        z-index:2;
+        width: 100%;
+    }
+    p {
+        position: relative;
+        z-index:3;
+        padding-left: 18px;
+        padding-top: 12px;
+        padding-bottom: 30px;
+        margin-bottom: 50px;
+    }
+}
+
+section p.question {
+    color:darken($purple, 5%);
+    background-image: url("../res/img/speech_box_left_min.svg");
+    margin: 0px 60px 15px 0px;
+    padding: 8px 0px 35px 15px;
+}
+
+section p.answer {
+    color:darken($orange, 5%);
+    background-image: url("../res/img/speech_box_right_min.svg");
+    margin: 0px 0px 15px 60px;
+    padding: 8px 0px 35px 15px;
+}
+
+section div.question {
+    margin-right: 30px;
+    img {
+        position: absolute;
+        z-index:2;
+    }
+    p {
+        position: relative;
+        z-index:3;
+        padding-left: 18px;
+        padding-top: 12px;
+        padding-bottom: 30px;
+        margin-bottom: 50px;
+    }
+}
+
+a {
+    color: inherit;
+    font-weight: bold;
+    
+    &:hover {
+        color: inherit;
     }
 }
