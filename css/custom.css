@@ -26,19 +26,6 @@ div.card {
 div.row div h2 {
   padding-top: 35px; }
 
-section div.answer {
-  margin-left: 30px; }
-  section div.answer img {
-    z-index: 2;
-    width: 100%; }
-  section div.answer p {
-    position: relative;
-    z-index: 3;
-    padding-left: 18px;
-    padding-top: 12px;
-    padding-bottom: 30px;
-    margin-bottom: 50px; }
-
 section p.question {
   color: #8d00e1;
   background-image: url("../res/img/speech_box_left_min.svg");
@@ -69,3 +56,11 @@ a {
   font-weight: bold; }
   a:hover {
     color: inherit; }
+
+div.banner-content {
+  background-color: #ffffff80;
+  padding: 15px;
+  border-radius: 5px;
+  height: 100%; }
+  div.banner-content h3, div.banner-content p {
+    height: 33%; }
