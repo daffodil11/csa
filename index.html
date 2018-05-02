@@ -8,70 +8,87 @@
         <link rel="stylesheet" type="text/css" href="css/custom.css">
     </head>
     <body>
+        <!--
         <header class="container">
             <div class="row">
                 <div class="col-sm-2">
                     <img alt="CSA Logo" src="res/img/logo.png" height="105" width="120" />
                 </div>
-                <nav class="col-sm-3 offset-sm-7 text-right">
-                    <div class="row">
-                        <h4 class="col-md-6"><a title="Meet the team" href="team.html">Team</a></h4>
-                        <h4 class="col-md-6"><a title="Contact Us" href="contact.html">Contact</a></h4>
-                    </div>
-                </nav>
             </div>
         </header>
-        <section class="jumbotron">
+        -->
+        <main role="main" class="jumbotron">
             <div class="container">
                 <div class="row">
                     <div class="col-9">
-                        <h3>Cheeky Stupid Awful</h3>
-                        <p>A fun party game for three to ten players involving challenges, competitions and chaos, soon to be released on Android.</p>
-                        <div class="btn-group">
-                            <a class="btn btn-primary" href="index.html#screenshots">Screenshots</a>
-                            <a class="btn btn-primary" href="index.html#device-requirements">Device Requirements</a>
-                            <a class="btn btn-primary" href="team.html">About the team</a>
+                        <div class="banner-content">
+                            <h3>Cheeky Stupid Awful</h3>
+                            <p>A fun party game for three to ten players involving challenges, competitions and chaos, soon to be released on Android.</p>
+                            <!--
+                            <div class="btn-group">
+                                <a class="btn btn-primary" href="index.html#screenshots">Screenshots</a>
+                                <a class="btn btn-primary" href="index.html#about">More info</a>
+                            </div>
+                            -->
+                            <a class="btn btn-primary" href="index.html#about">More info</a>
                         </div>
                     </div>
-                    <div class="col-3">
-                        <img src="res/img/cheeky_symbol.png" height="200" width="200"/>
+                    <div class="col-3 text-right">
+                        <img src="res/img/logo.png" height="210" width="240"/>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <section class="container" id="screenshots">
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <div class="card box-shadow">
+                        <img class="card-img-top img-responsive" alt="Main Menu" src="res/img/main_menu.png" />
+                        <div class="card-body">
+                            <p class="card-text">The main menu. Don't just read the credits! The game is also fun.</p>
+                         </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="card box-shadow">
+                        <img class="card-img-top img-responsive" alt="Player Name Entry" src="res/img/name_entry.png" />
+                        <div class="card-body">
+                            <p class="card-text">Everyone who's playing enters their name for the purposes of multi-player challenges&trade; and scoring.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="card box-shadow">
+                        <img class="card-img-top img-responsive" alt="Player's Hand of Cards" src="res/img/player_hand.png"/>
+                        <div class="card-body">
+                            <p class="card-text">You gotta know when to hold them and know when to fold them.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="card box-shadow">
+                        <img class="card-img-top img-responsive" alt="End of Game Scoreboard" src="res/img/scoreboard.png"/>
+                        <div class="card-body">
+                            <p class="card-text">It's the taking part that counts, but everyone likes a medal.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="container" id="screenshots">
-            <div class="row">
-                <figure class="col-sm-6">
-                    <img alt="Main Menu" src="res/img/main_menu.png" height="640" width="400"/>
-                    <p>The main menu. Don't just read the credits! The game is also fun.</p>
-                </figure>
-                <figure class="col-sm-6">
-                    <img alt="Player Name Entry" src="res/img/name_entry.png" height="640" width="400"/>
-                    <p>Everyone who's playing enters their name for the purposes of multi-player challenges&trade; and scoring.</p>
-                </figure>
-            </div>
-            <div class="row">
-                <figure class="col-sm-6">
-                    <img alt="Player's Hand of Cards" src="res/img/player_hand.png" height="640" width="400"/>
-                    <p>...</p>
-                </figure>
-                <figure class="col-sm-6">
-                    <img alt="End of Game Scoreboard" src="res/img/scoreboard.png" height="640" width="400"/>
-                    <p>...</p>
-                </figure>
-            </div>
+        <section class="container" id="about">
+            <p class="question">What do I need to play the game?</p>
+            <p class="answer">You will need a device running Android 3.0 (Honeycomb) or above and some friends. (Most people find these quick and easy to make, and then you will just need to get some friends.)</p>
+            <p class="question">What if I'd prefer not to drink?</p>
+            <p class="answer">You can use whatever kind of forfeit you prefer!</p>
+            <p class="question">Do you have to be crazy to install this app?</p>
+            <p class="answer">No, but it helps!</p>
+            <p class="question">I am such hype. When can I play this wonderful game?</p>
+            <p class="answer">Whoa! Calm down there, buddy. Soon. This page will be updated with a release date as soon as possible.</p>
+            <p class="question">Who did this?</p>
+            <p class="answer">It was like that when I got here! Oh, wait - you meant the app didn't you? You can read about the team <a title="Meet the team" href="team.html">here</a>.</p>
         </section>
-        <section class="container" id="device-requirements">
-            <h4>What do I need to play the game?</h4>
-            <p>You will need a device running Android 3.0 (Honeycomb) or above and some friends. (Most people find these quick and easy to make, and then you will just need to get some friends.)</p>
-            <h4>What if I'd prefer not to drink?</h4>
-            <p>You can use whatever kind of forfeit you prefer!</p>
-            <h4>Do you have to be crazy to install this app?</h4>
-            <p>No, but it helps!</p>
-            <h4>I am such hype. When can I play this wonderful game?</h4>
-            <p>Whoa! Calm down there, buddy. Soon. This page will be updated with a release date as soon as possible.</p>
-        </section>
-        <footer class="container">
-            <p>Put some footer stuff in here.</p>
+        <footer class="container text-right">
+            <a target="_blank" title="Follow CSA on facebook" href="http://www.facebook.com/CheekyStupidAwful"><img alt="Follow CSA on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook40x40.png" border=0></a>
+            <p>Put e-mail in here.</p>
         </footer>
     </body>

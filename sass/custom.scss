@@ -1,20 +1,140 @@
 $margin: 10px;
-
+$purple: #9d00fa;
+$orange: #e77d07;
+$green: #49ad32;
+$transwhite: #ffffff80;
 header {
     margin-top: $margin;
     margin-bottom: $margin;
 }
 
-section.jumbotron {
+section.container {
+    margin-bottom: 25px;
+}
+
+main.jumbotron {
   display: flex;
   background-image: url('../res/img/icon_banner.png');
   background-size: cover;
-  height: 300px;
+  height: 360px;
   border-radius: 0px;
+  margin-top: 40px;
   margin-bottom: 40px;
 }
 
 nav div.row h4 {
     text-align:right;
     display:inline-block;
+}
+
+div.bio-card {
+    
+    border: none;
+    
+    &:nth-child(1) {
+        background-color: $orange;
+    }
+    
+    &:nth-child(2) {
+        background-color: $purple;
+    }
+    
+    &:nth-child(3) {
+        background-color: $green;
+    }
+    
+    &:nth-child(4) {
+        background-color: $orange;
+    }
+    
+    div.card-body {
+        background-color: white;
+        border-radius: 3px;
+    }
+}
+
+div.card {
+    height: 100%;
+    padding: 5px;
+    
+    div.card-img-left {
+        display: flex;              /* establish flex container */
+        flex-direction: column;     /* stack flex items vertically */
+        justify-content: center;    /* center items vertically, in this case */
+        align-items: center;        /* center items horizontally, in this case */
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+    
+    div p {
+        padding-bottom: 0px;
+        margin-bottom: 5px;
+    }
+}
+
+header div.row div.heading-container {
+    display: flex;              /* establish flex container */
+    flex-direction: column;     /* stack flex items vertically */
+    justify-content: center;    /* center items vertically, in this case */
+    align-items: center;        /* center items horizontally, in this case */
+}
+
+div.row div {
+    
+    h2 {
+        padding-top:35px;
+    }
+}
+
+section p.question {
+    color:darken($purple, 5%);
+    background-image: url("../res/img/speech_box_left_min.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0px 60px 15px 0px;
+    padding: 8px 0px 35px 15px;
+}
+
+section p.answer {
+    color:darken($orange, 5%);
+    background-image: url("../res/img/speech_box_right_min.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 0px 0px 15px 60px;
+    padding: 8px 0px 35px 15px;
+}
+
+section div.question {
+    margin-right: 30px;
+    img {
+        position: absolute;
+        z-index:2;
+    }
+    p {
+        position: relative;
+        z-index:3;
+        padding-left: 18px;
+        padding-top: 12px;
+        padding-bottom: 30px;
+        margin-bottom: 50px;
+    }
+}
+
+a {
+    color: inherit;
+    font-weight: bold;
+    
+    &:hover {
+        color: inherit;
+    }
+}
+
+div.banner-content {
+    background-color: $transwhite;
+    padding: 15px;
+    border-radius: 5px;
+    height: 100%;
+    h3, p {
+        height: 33%;
+    }
 }
