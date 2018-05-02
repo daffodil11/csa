@@ -20,8 +20,65 @@ nav div.row h4 {
   text-align: right;
   display: inline-block; }
 
+div.bio-card {
+  border: none; }
+  div.bio-card:nth-child(1) {
+    background-color: #e77d07; }
+  div.bio-card:nth-child(2) {
+    background-color: #9d00fa; }
+  div.bio-card:nth-child(3) {
+    background-color: #49ad32; }
+  div.bio-card:nth-child(4) {
+    background-color: #e77d07; }
+  div.bio-card div.card-body {
+    background-color: white;
+    border-radius: 3px; }
+
 div.card {
-  height: 100%; }
+  height: 100%;
+  padding: 5px; }
+  div.card div.card-img-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* establish flex container */
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    /* stack flex items vertically */
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    /* center items vertically, in this case */
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    /* center items horizontally, in this case */
+    padding-left: 10px;
+    padding-right: 20px; }
+  div.card div p {
+    padding-bottom: 0px;
+    margin-bottom: 5px; }
+
+header div.row div.heading-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* establish flex container */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  /* stack flex items vertically */
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  /* center items vertically, in this case */
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /* center items horizontally, in this case */ }
 
 div.row div h2 {
   padding-top: 35px; }
@@ -29,12 +86,16 @@ div.row div h2 {
 section p.question {
   color: #8d00e1;
   background-image: url("../res/img/speech_box_left_min.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
   margin: 0px 60px 15px 0px;
   padding: 8px 0px 35px 15px; }
 
 section p.answer {
   color: #ce7006;
   background-image: url("../res/img/speech_box_right_min.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   margin: 0px 0px 15px 60px;
   padding: 8px 0px 35px 15px; }
 
