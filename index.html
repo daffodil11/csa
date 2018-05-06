@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/custom.css">
     </head>
-    <body>
+    <body itemscope itemtype="http://schema.org/VideoGame">
         <!--
         <header class="container">
             <div class="row">
@@ -22,8 +22,8 @@
                 <div class="row">
                     <div class="col-9">
                         <div class="banner-content">
-                            <h3>Cheeky Stupid Awful</h3>
-                            <p>A fun party game for three to ten players involving challenges, competitions and chaos, soon to be released on Android.</p>
+                            <h3 itemprop="name">Cheeky Stupid Awful</h3>
+                            <p itemprop="description">A fun <span itemprop="genre">party</span> <span itemprop="applicationCategory">game</span> <span itemprop="numberOfPlayers" itemscope itemtype="http://schema.org/QuantitativeValue">for <span itemprop="minValue">3</span> to <span itemprop="maxValue">10</span> players</span> <span itemprop="audience" itemscope itemtype="http://schema.org/PeopleAudience">(recommended age: <span itemprop="suggestedMinAge">18</span>+)</span> involving <span itemprop="gameItem">challenges</span>, <span itemprop="gameItem">competitions</span> and <span itemprop="gameItem">chaos</span>, soon to be released on <span itemprop="gamePlatform">Android</span>.</p>
                             <!--
                             <div class="btn-group">
                                 <a class="btn btn-primary" href="index.html#screenshots">Screenshots</a>
@@ -69,7 +69,7 @@
                     <div class="card box-shadow">
                         <img class="card-img-top img-responsive" alt="End of Game Scoreboard" src="res/img/scoreboard.png"/>
                         <div class="card-body">
-                            <p class="card-text">It's the taking part that counts, but everyone likes a medal.</p>
+                            <p class="card-text">It's the taking part that counts, but everyone likes a <span itemprop="gameItem">medal</span>.</p>
                         </div>
                     </div>
                 </div>
@@ -77,7 +77,7 @@
         </section>
         <section class="container" id="about">
             <p class="question">What do I need to play the game?</p>
-            <p class="answer">You will need a device running Android 3.0 (Honeycomb) or above and some friends. (Most people find these quick and easy to make, and then you will just need to get some friends.)</p>
+            <p class="answer">You will need a device running <span itemprop="operatingSystem">Android 3.0 (Honeycomb)</span> or above and some friends. (Most people find these quick and easy to make, and then you will just need to get some friends.)</p>
             <p class="question">What if I'd prefer not to drink?</p>
             <p class="answer">You can use whatever kind of forfeit you prefer!</p>
             <p class="question">Do you have to be crazy to install this app?</p>
